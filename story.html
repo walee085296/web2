@@ -176,13 +176,21 @@
        ];
 
     // دالة التبديل بين السكاشن
-    function showSection(sectionId) {
+    // function showSection(sectionId) {
+    //     document.getElementById('home-page').style.display = 'none';
+    //     document.getElementById('products-page').style.display = 'none';
+        
+    //     document.getElementById(sectionId).style.display = 'block';
+    //     window.scrollTo(0, 0); // العودة لأعلى الصفحة عند التبديل
+    // }
+     function showSection(sectionId) {
         document.getElementById('home-page').style.display = 'none';
         document.getElementById('products-page').style.display = 'none';
         
         document.getElementById(sectionId).style.display = 'block';
         window.scrollTo(0, 0); // العودة لأعلى الصفحة عند التبديل
     }
+
 
     const grid = document.getElementById('mainGrid');
     products.forEach(p => {
